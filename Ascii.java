@@ -9,9 +9,10 @@ public class Ascii {
 		System.out.println("Enter the value:");
 		int i=sc.nextInt();
 		do {
+			System.out.println("Ascii code:"+i);
 			System.out.println((char)i);
 			i++;
-		}while(i<=256);
+		}while(i<=255);
 
 	}
 

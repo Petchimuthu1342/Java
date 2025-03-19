@@ -4,12 +4,17 @@ public class NaturalNum {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the value:");
-		int i=sc.nextInt();
-		while(i>=1){
-			System.out.println(i);  
-			i--;
+		System.out.println("Get the Number:");
+		int num=sc.nextInt();
+		int rev=0;
+		System.out.println("Reverse Number:");
+		while(num>0){
+		    int digit=num%10;
+			rev=rev*10+digit;
+			num/=10;
+			System.out.print(rev);
 		}
-	}
+		
+		}
 
 }

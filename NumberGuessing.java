@@ -1,12 +1,13 @@
 package Practice;
-import java.util.Scanner;
+import java.util.Scanner; 
 public class NumberGuessing {  
 		    public static void guessingNumberGame()
 		    {
 		        Scanner sc = new Scanner(System.in);	
-		        int number = 1 + (int)(100 * Math.random());
 		        System.out.println("Enter Number of Chances:");
 				int i=sc.nextInt();
+				//math.random 0.0 to 100.0
+				int number = 1 + (int)(100 * Math.random());
 
 		        System.out.println("The number is chosen between 1 and 100.");
 		        System.out.println("You have " + i + " attempts to guess the correct number.");
@@ -18,15 +19,15 @@ public class NumberGuessing {
 		                sc.close();
 		                return;
 		            }
-		            else if (guess < number) {
-		                System.out.println(" The number is greater than " + guess);
+		            else if (guess > number) {
+		                System.out.println(" The number is too high " + guess);
 		            }
 		            else {
-		                System.out.println(" The number is less than " + guess);
+		                System.out.println(" The number is too low " + guess);
 		            }
 		        }
 
-		        System.out.println("You've exhausted all attempts. The correct number was: "+ number);
+		        System.out.println("You have exhausted all attempts. The correct number was: "+ number);
 		        sc.close();
 		    }
 
@@ -35,5 +36,4 @@ public class NumberGuessing {
 		        guessingNumberGame();
 		    }
 	}
-
 

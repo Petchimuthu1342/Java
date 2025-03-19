@@ -13,5 +13,10 @@ public class ReverseAlpha {
 			System.out.println((char)j);
 			
 		}
+		/*char j;
+		char i=sc.next().charAt(0);
+		for(j=i;j>='A';j--) {
+			System.out.print(j);
+		}*/
 	}
 	}
